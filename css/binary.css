@@ -1,0 +1,113 @@
+body {
+    background-color: #1E1C29 !important;
+}
+
+.strbtn {
+    margin-top: 100px;
+    background-color: #ffc75f !important;
+    color: #000000;
+}
+
+@media (min-width:700px) {
+  .strbtn{
+    margin-top: 200px;
+  }
+}
+
+.endgame {
+    background-color: #ffc75f !important;
+    color: #000000;
+
+}
+
+.nav {
+    background-color: rgb(23, 22, 31) !important;
+}
+
+.logoLetter {
+    display: inline-block;
+    margin: -.1em;
+    color: rgb(202, 202, 202);
+}
+
+#gameLogo div:nth-child(even) {
+    color: #ffc75f;
+}
+
+
+#gameLogo {
+    font-size: 2em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    background-color: transparent !important;
+}
+
+#levelNumber {
+    font-size: 3rem;
+    display: block;
+    color: antiquewhite;
+}
+
+#scoreNumber {
+    display: block;
+    font-size: 1.5rem;
+    width: 4em;
+    color: antiquewhite;
+}
+
+#levelNumberCont {
+    text-align: center;
+    color: antiquewhite;
+}
+
+#scoreNumberCont {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: antiquewhite;
+}
+
+#scoreNumberCont {
+    text-align: center;
+    padding-top: 0em  !important;
+    padding-bottom: 2em;
+    color: antiquewhite;
+    font-size: 1.7rem;
+}
+#akForm{
+  margin-top: 20px;
+}
+#akForm input{
+  margin-top: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+  height: 28px;
+}
+#progressAk{
+  position: absolute;
+  left: 70px;
+  top: 30px;
+}
+#progressBar{
+  top: 30px;
+}
+@media (min-width: 640px) {
+  #progressBar{
+    top: -50px;
+  }
+  #progressAk{
+    top:-50px;
+  }
+}
+.containers{
+  margin : 30px 5px 30px 25vw;
+}
+.instructions{
+  text-align: left;
+  /* margin: 30px 0 0 30%; */
+  color: white;
+  list-style: disc;
+  line-height: 200%;
+  font-size: 18px;
+}

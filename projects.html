@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vibhav</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+        content="Projects made by Team Vibhav, the Electronics departmental club of NIT Hamirpur for the annual Techfest NIMBUS"
+        name="description">
+    <meta name="keywords"
+        content="Projects,Machine Learning,  Deep Learinng, Augmented Reality, Embedded Systemm, VLSI, Internet of Things">
+
+
+    <!-- Favicons -->
+    <link href="img/Yellow.png" rel="icon">
+    <link href="img/Yellow.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!--meterial layout card css-->
+    <link rel="stylesheet" href="dist/material-cards.css">
+
+    <style type="text/css">
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            background-image: linear-gradient(to right, rgb(30, 28, 41), rgb(30, 28, 41)) !important;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 200;
+        }
+    </style>
+
+
+    <!--meterial layout card css-->
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/button.css">
+    <style>
+        .display-4 {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading">
+
+    </div>
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header">
+
+        <div id="topbar">
+            <div class="container">
+                <div class="social-links">
+                    <a target="_blank" href="https://www.instagram.com/team_vibhav/" class="instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/teamvibhavece" class="facebook"><i
+                            class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a target="_blank" href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-4">
+
+            <div class="logo float-left ">
+                <h1 class="text-success site-title"><a href="index.html#intro" class="scrollto">VIBHAV</a></h1>
+
+            </div>
+
+
+
+
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html#intro">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li class="drop-down"><a href="team.html">Our Team</a>
+                        <ul>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="internexperience.html">Intern Experiences</a></li>
+                            <li><a href="alumni.html">Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="projects.html">Our Work</a>
+                        <ul>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="event.html">Events </a></li>
+                            <li><a href="workshop.html">Workshops </a></li>
+                            <li><a href="pahal.html">Pahal </a></li>
+                            <li><a href="diy.html">DIY Projects </a></li>
+                            <li><a href="nithvr.html">NITH VR</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Games</a>
+                        <ul>
+                            <li><a href="binary.html">Bit-N-Byte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#footer">Contact Us</a></li>
+
+                </ul>
+            </nav>
+            <!-- .main-nav -->
+
+            <script type="text/javascript">
+                function lm_function() {
+                    document.body.classList.toggle('dark-mode');
+                }
+            </script>
+        </div>
+    </header>
+    <!-- #header -->
+
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio">
+        <div class="container">
+
+            <header class="section-header">
+                <h3 class="section-title nabin-padding">Our Projects</h3>
+            </header>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-Ai-ml">AI/ML</li>
+                        <li data-filter=".filter-iot">IoT</li>
+                        <li data-filter=".filter-ar">AR</li>
+
+                        <li data-filter=".filter-es">Embedded Systems</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-Ai-ml">
+                    <div class="material-card Grey">
+                        <h2>
+                            <span>Braille OCR</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/braileOcr.jpg" alt="Brail-OCR">
+                            </div>
+                            <div class="mc-description text-project text-justify">
+                                Braille is a tactile writing system used by people who are visually impaired. It is
+                                traditionally written with embossed paper. The motive behind building this project is to
+                                make a system which could read and convert the written data into braille language.
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/Mukulthakur17/BrailleOcr"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-ar">
+                    <article class="itembox material-card Brown">
+                        <h2>
+                            <span>AR Newsletter</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/arNewsLetter.jpg"
+                                    alt="AR-NewsLetter">
+                            </div>
+                            <div class="mc-description text-project text-justify">
+                                AR newsletter is a newsletter that takes readers beyond the printed page. The main aim
+                                of AR newsletter is to attract new audiences especially young people to increase their
+                                waning number of readers with an interactive environment.
+
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/AR%20News%20Letter"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-es">
+                    <article class="itembox material-card Grey">
+                        <h2>
+                            <span>Smart Solar</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/smartSolar1.jpg"
+                                    alt="Smart-Solar">
+                            </div>
+                            <div class="mc-description text-project">
+                                This is a mini portable solar power plant that is based on a sunflower model. This is a
+                                model which receives maximum sunlight and it saves a lot of space as compared to other
+                                solar plants.
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/Smart%20Solar"></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-es">
+                    <article class="itembox material-card Brown">
+                        <h2>
+                            <span>Smart Entry System</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/smartEntrySystem.jpg"
+                                    alt="Smart-Entry-System">
+                            </div>
+                            <div class="mc-description text-project text-justify">
+                                As there is a major problem of seat occupancy in the library due to unnecessary seat
+                                reservation of many students for a day without being present in the library. So we
+                                developed a system that shows the presently occupied seats in the library and live
+                                count of seats available to sit in the library.
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/kamatji/Smart_Library_System"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-Ai-ml">
+                    <div class="material-card Blue-Grey">
+                        <h2>
+                            <span>C.A.R.T.</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/cart.webp" alt="CART">
+                            </div>
+                            <div class="mc-description text-project ">
+                                A crowd analysis system that will detect every face in the crowd and based upon that
+                                will give the crowd count. Further those detected faces will be run through different
+                                models to detect the Emotion, Age, Gender and Ethinicity of the crowd.
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/Mukulthakur17/CART-Crowd_Analysis_in_Real_Time"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-iot">
+                    <article class="itembox material-card Brown">
+                        <h2>
+                            <span>Swarm Bot</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/swarm_bot.jpg" alt="Swarm-Bot">
+                            </div>
+                            <div class="mc-description text-project text-justify">
+                                Swarm robotics is an approach to the coordination of multiple robots as a system that
+                                consists of large numbers of mostly simple physical robots. It is supposed that a
+                                desired collective behaviour emerges from the interactions between the robots and
+                                interactions
+                                of robots with the environment.
+
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/kamatji/SWARM_BOT"></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-Ai-ml">
+                    <article class="itembox material-card Teal">
+                        <h2>
+                            <span>Anti-Depression Bot</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/antiDepressionBot.webp"
+                                    alt="Smart-Solar">
+                            </div>
+                            <div class="mc-description text-project text-justify">
+                                The life of people working in the corporate sector and students who are studying in
+                                cities far from home is quite lonely. Depression is a real problem out there and costs
+                                thousands of human lives per year. The main motive behind building this bot is to
+                                cure that problem and help people to live a peaceful life.
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/Anti-Depression%20and%20Companion%20Bot%20(ADCB)"></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-Ai-ml">
+                    <article class="itembox material-card Blue-Grey">
+                        <h2>
+                            <span>Top-Crop Farm Bot</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/cropFarmBot.jpg"
+                                    alt="Crop-Farm-Bot">
+                            </div>
+                            <div class="mc-description text-project text-justify">
+                                Traditionally humans have to manually look after their large farms and this consumes a
+                                lot of time but this bot solves the problem. The main aim of this project is to monitor
+                                large fields, conditions of soil, crops in a more efficient manner.
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/TOPCROP"></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-ar">
+                    <article class="itembox material-card Blue-Grey">
+                        <h2>
+                            <span>AR Math Visualizer</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/arMathsVisualizer.webp"
+                                    alt="Crop-Farm-Bot">
+                            </div>
+                            <div class="mc-description text-project text-justify">
+                                In this project, a student can enter conic equations of their choice to see the
+                                real-time generated 3D models. This makes it easier to understand 3D curves and conic
+                                sections. Augmented Reality is used to project virtual objects on target images.
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/Team-Vibhav/Projects-TeamVibhav/tree/main/AR%20Maths%20Visualizer"></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-iot">
+                    <article class="itembox material-card Teal">
+                        <h2>
+                            <span>Li-Fi</span>
+                            <strong>
+                                <i class="fas fa-star"></i>
+                                Team Vibhav
+                            </strong>
+                        </h2>
+                        <div class="mc-content">
+                            <div class="img-container">
+                                <img class="img-responsive img-fluid" src="img/projects/liFi.webp" alt="Crop-Farm-Bot">
+                            </div>
+                            <div class="mc-description text-project text-justify">
+                                Li-Fi stands for Light-Fidelity, an emerging technology through which we have solved the
+                                problem of reduced information exchange rate and bandwidth. Li-fi uses visible light
+                                instead of Gigahertz Radio Waves for data transfer which makes it a fast and
+                                cheap mode of wireless communication.
+                            </div>
+                        </div>
+                        <a class="mc-btn-action">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="mc-footer">
+                            <h4>
+                                github
+                            </h4>
+                            <a target="_blank" class="fab fa-github Mat-Card-Pad"
+                                href="https://github.com/astral29/ELEC_20_THEGEEKSQUAD"></a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+    </section>
+    <!-- #portfolio -->
+
+
+
+    <!--material layout cards-->
+
+
+
+    <!--material layout cards-->
+    <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
+    <footer id="footer" class="">
+        <div class="container">
+            <div class="credits text-light">
+                Designed by <a href="#">Vibhav</a>
+            </div>
+        </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script>
+        $(function () {
+            $('.material-card > .mc-btn-action').click(function () {
+                var card = $(this).parent('.material-card');
+                var icon = $(this).children('i');
+                icon.addClass('fa-spin-fast');
+
+                if (card.hasClass('mc-active')) {
+                    card.removeClass('mc-active');
+
+                    window.setTimeout(function () {
+                        icon
+                            .removeClass('fa-arrow-left')
+                            .removeClass('fa-spin-fast')
+                            .addClass('fa-bars');
+
+                    }, 800);
+                } else {
+                    card.addClass('mc-active');
+
+                    window.setTimeout(function () {
+                        icon
+                            .removeClass('fa-bars')
+                            .removeClass('fa-spin-fast')
+                            .addClass('fa-arrow-left');
+
+                    }, 800);
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            setTimeout(function () {
+                $('#loading').fadeOut('slow');
+            }, 800)
+        })
+    </script>
+</body>
+
+</html>

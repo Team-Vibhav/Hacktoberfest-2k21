@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Binary Game</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="Team Vibhav is the Departmental team of Electronics & Communications Engineering Department which works
+    for Nimbus Annual Technical Festival of National Institute of Technology, Hamirpur." name="description">
+	<meta name="keywords" content="Projects,events,workshops">
+
+	<!-- Favicons -->
+	<link href="img/Yellow.png" rel="icon">
+	<link href="img/Yellow.png" rel="apple-touch-icon">
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+		rel="stylesheet">
+
+	<!-- Bootstrap CSS File -->
+
+
+	<!-- Libraries CSS Files -->
+
+	<!-- Main Stylesheet File -->
+
+	<meta charset="utf-8" />
+	<title>Vibhav Binary Number Game </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Cisco's Binary Number game has been brought back with our adaptation. Learn how to convert binary to decimal and vice versa with this fast-paced 'Easy to learn, hard to master' game about binary numbers" />
+	<link rel="stylesheet" href="https://games.penjee.com/binary-numbers-game/css/reset.min.css" />
+	<link rel="stylesheet" href="https://games.penjee.com/binary-numbers-game/css/style.css?v1" />
+	<link rel="apple-touch-icon" sizes="57x57"
+		href="https://games.penjee.com/binary-numbers-game/extra/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60"
+		href="https://games.penjee.com/binary-numbers-game/extra/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72"
+		href="https://games.penjee.com/binary-numbers-game/extra/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76"
+		href="https://games.penjee.com/binary-numbers-game/extra/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114"
+		href="https://games.penjee.com/binary-numbers-game/extra/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120"
+		href="https://games.penjee.com/binary-numbers-game/extra/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144"
+		href="https://games.penjee.com/binary-numbers-game/extra/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152"
+		href="https://games.penjee.com/binary-numbers-game/extra/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180"
+		href="https://games.penjee.com/binary-numbers-game/extra/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"
+		href="https://games.penjee.com/binary-numbers-game/extra/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32"
+		href="https://games.penjee.com/binary-numbers-game/extra/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96"
+		href="https://games.penjee.com/binary-numbers-game/extra/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16"
+		href="https://games.penjee.com/binary-numbers-game/extra/favicon-16x16.png">
+	<link rel="manifest" href="https://games.penjee.com/binary-numbers-game/extra/manifest.json">
+	<link rel="stylesheet" href="css/binary.css">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="extra/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <script src="ak-binary.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script>
+		function SubForm() {
+			var score = document.getElementById("scoreNumber").innerText;
+			var d = new Date();
+			var date = d.toString();
+			document.getElementById('ak_date').value = date;
+			$.ajax({
+				url: "https://api.apispreadsheets.com/data/10155/",
+				type: "post",
+				data: $("#akForm").serializeArray(),
+				success: function () {
+					location.reload()
+				},
+				error: function (e) {
+					alert("error");
+				}
+			});
+		}
+	</script>
+</head>
+
+<body>
+	<div id="gameWindowContainer">
+		<div id="startMenu" class="mainMenuLayer">
+			<div id="gameLogo" class="nav">
+				<div class="logoLetter">V</div>
+				<div class="logoLetter">I</div>
+				<div class="logoLetter">B</div>
+				<div class="logoLetter">H</div>
+				<div class="logoLetter">A</div>
+				<div class="logoLetter">V</div>
+				<div class="logoLetter">&nbsp;</div>
+				<div class="logoLetter">B</div>
+				<div class="logoLetter">I</div>
+				<div class="logoLetter">N</div>
+				<div class="logoLetter">A</div>
+				<div class="logoLetter">R</div>
+				<div class="logoLetter">Y</div>
+			</div>
+			<form id="akForm">
+				<input type="text" id="akname" name="Name" placeholder="Name">
+				<input type="text" id="akroll" name="Roll No" placeholder="Roll No">
+				<input type="email" id="akemail" name="E-mail" placeholder="E-mail">
+				<input type="tel" id="akphone" name="Phone No" pattern="[1-9]{1}[0-9]{9}" placeholder="Phone">
+				<input id="ak_score" type="hidden" name="Score" value="">
+				<input id="ak_date" type="hidden" name="Date" value="">
+				<input id="ak_time" type="hidden" name="Time" value="">
+			</form>
+			<button id="startGameButton" class="defbtn strbtn" onclick="ak_start()">
+				Start Game
+			</button>
+			<br />
+			<button id="instructionsButton" class="defbtn endgame">
+				Instructions
+			</button>
+			<br />
+			<button style="width:130px; padding:10px" id="akback" onclick="akhome()" class="defbtn endgame">
+				Back
+			</button>
+		</div>
+		<div id="uiPanelL" class="gameLayer">
+			<button class="uipch strbtn" id="pauseMenuButton" style="display: none;">
+				Pause
+			</button>
+			<progress value="0" max="150" id="progressBar" style="position:absolute;"></progress>
+			<span id="progressAk"></span>
+		</div>
+		<div id="binField" class="gameLayer">
+			<div id="binMarkLine">
+				<table>
+					<tr>
+						<td>128</td>
+						<td>64</td>
+						<td>32</td>
+						<td>16</td>
+						<td>8</td>
+						<td>4</td>
+						<td>2</td>
+						<td>1</td>
+					</tr>
+				</table>
+			</div>
+			<div id="binBits">
+			</div>
+
+			<div id="numKeyboard" class="NumkeyboardLayer">
+				<div id="numeKeyboardDisplay" class="NumkeyboardLayer">
+					000
+				</div>
+				<table>
+					<tr>
+						<td id="numericKey1">1</td>
+						<td id="numericKey2">2</td>
+						<td id="numericKey3">3</td>
+					</tr>
+					<tr>
+						<td id="numericKey4">4</td>
+						<td id="numericKey5">5</td>
+						<td id="numericKey6">6</td>
+					</tr>
+					<tr>
+						<td id="numericKey7">7</td>
+						<td id="numericKey8">8</td>
+						<td id="numericKey9">9</td>
+					</tr>
+					<tr>
+						<td id="numericKeyX"><img class="numButton"
+								src="https://games.penjee.com/binary-numbers-game/img/delbtn.svg" alt=""></td>
+						<td id="numericKey0">0</td>
+						<td id="numericKeyV">
+							<img class="numButton" src="https://games.penjee.com/binary-numbers-game/img/okbtn.svg"
+								alt="">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="uiPanelR" class="gameLayer">
+			<div id="levelNumberCont">
+				level: <span id="levelNumber">1</span>
+			</div>
+			<div id="scoreNumberCont">
+				score: <span id="scoreNumber">0</span>
+			</div>
+			<div id="linesNumber">
+				linesLeft: 4
+			</div>
+		</div>
+
+		<div id="pauseMenu" class="pauseLayer">
+			<div>
+				<div id="gameLogo">
+					<div class="logoLetter">V</div>
+					<div class="logoLetter">I</div>
+					<div class="logoLetter">B</div>
+					<div class="logoLetter">H</div>
+					<div class="logoLetter">A</div>
+					<div class="logoLetter">V</div>
+					<div class="logoLetter">&nbsp;</div>
+					<div class="logoLetter">B</div>
+					<div class="logoLetter">I</div>
+					<div class="logoLetter">N</div>
+					<div class="logoLetter">A</div>
+					<div class="logoLetter">R</div>
+					<div class="logoLetter">Y</div>
+				</div>
+			</div>
+			<span class="mt-2">Game paused</span>
+			<br />
+			<button id="resumeGameButton" class="defbtn endgame">
+				Resume Game
+			</button>
+			<br />
+			<button id="endGameButton" onclick="SubForm()" class="defbtn endgame">
+				End Game
+			</button>
+		</div>
+		<div id="gameOver" class="gameOverLayer">
+			<span class="endgame">Game Over</span>
+		</div>
+		<div id="instructions" class="InstructionLayer">
+			<!-- <img id="videoInstructions" src="img/ak.gif"></img> -->
+			<img src="img/ak.gif"></img>
+			<br>
+			<div class="containers">
+				<ul class="instructions">
+					<li>It is a binary addition game. Duration of this round is for 20 minutes.</li>
+					<li>Person will be given two minutes for one attempt and to bag a maximum score.</li>
+					<li>Those who are able to play for 2.5 minutes continuosly, only those names will be shown on the
+						leaderboard.</li>
+					<li>Those who are not able to play for 2.5 minutes continuously and their game is over, then that
+						attempt will not be shown in the leaderboard.</li>
+					<li>Participants can play and give as many attempts as they want in those 20 minutes duration, only
+						the highest score will be considered.</li>
+					<li>No submission will be considered after 20 minutes.</li>
+					<li>Please give your valid contact no. and email id.</li>
+				</ul>
+			</div>
+			<button id="gotItButton" class="defbtn">
+				Got it
+			</button>
+		</div>
+	</div>
+	<script src="js/ak-binary.js"></script>
+	<script>
+		function ak_start() {
+			if (!document.getElementById('akname').value || !document.getElementById('akroll').value || !document.getElementById('akemail').value || !document.getElementById('akphone').value) {
+				alert("Fill the required field")
+				location.reload()
+			}
+			else {
+				var timeleft = 150;
+				var downloadTimer = setInterval(function () {
+					if (timeleft <= 0) {
+						clearInterval(downloadTimer);
+					}
+					document.getElementById("progressBar").value = 150 - timeleft;
+					document.getElementById('progressAk').innerText = 150 - timeleft;
+					timeleft -= 1;
+				}, 1000);
+				setTimeout(function () {
+					var ak_end = document.getElementById("endGameButton");
+					ak_end.click();
+				}, 152000);
+			}
+		}
+	//https://stackoverflow.com/questions/3969475/javascript-pause-settimeout
+	</script>
+	<script type="text/javascript">
+		function akhome() {
+			window.location.pathname = '/index.html'
+		}
+	</script>
+</body>
+
+</html>

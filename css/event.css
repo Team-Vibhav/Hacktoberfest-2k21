@@ -1,0 +1,235 @@
+section.project1 {
+  padding-top: 110px;
+}
+.modal-content{
+  margin:70px auto;
+}
+
+section>.text1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 10px;
+}
+
+section.project1 .text1 h2 {
+  margin: 0 0 12px;
+}
+
+section .text1>h2 {
+  color: #f7fbff;
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+section .text1>p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: #b0bec5;
+  color: #b0bec5;
+}
+.img-aksh{
+  max-width: 100%;
+  height:60vh;
+}
+section.project1 .text1 h4 {
+  color: #b0bec5;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+section.project1 .text1 p {
+  color: #b0bec5;
+}
+
+hr{
+  height: 1px;
+  opacity: 60%;
+  border-width:0;
+  color:#b0bec5;
+  background-color: #b0bec5
+}
+
+@media (min-width:760px) and (max-width:800px) {
+  .carda_w{
+    margin:20px;
+    height:70vh !important;
+  }
+  .carda{
+    height: 70vh !important;
+    margin: 20px !important;
+  }
+  #footer, hr{
+    position: relative;
+    bottom:-90px;
+  }
+}
+@media (min-width:772px){
+
+}
+.carda{
+  background-color: #1c1b29;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.18);
+  height: 100vh;
+  margin: 40px auto;
+}
+@media (min-width:800px) {
+  .carda{
+    height:85vh;
+  }
+  .carda_w{
+    width: 75vh;
+    margin: auto;
+  }
+}
+
+@media (min-width:1200px) {
+  .carda{
+    height:90vh;
+  }
+  
+}
+
+@media (max-width: 600px){
+.carda {
+    height: 80vh !important;
+}
+}
+
+.carda_w{
+  background-color: #1c1b29;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.18);
+  height: 90vh;
+}
+@media (max-width:600px) {
+
+  .carda_w{
+    height:70vh !important;
+  }
+  .carda{
+    height:80vh !important;
+  }
+  .carda_w .container1{
+    height:40vh !important;
+  }
+  .container1{
+    height:40vh !important;
+  }
+}
+.container1{
+  position: relative;
+  height: 60%;
+  clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.container1:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+.card1>.container1:after{
+  background-image: linear-gradient(
+      135deg,
+      #0100ec,
+      #fb36f4
+  );
+}
+.card2>.container1:after{
+  background-image: linear-gradient(
+      135deg,
+      #2bdce3,
+      #42ffdb
+  );
+}
+.card3>.container1:after{
+  background-image: linear-gradient(
+      135deg,
+      #ffab1d,
+      #f8501c
+  );
+}
+.details1{
+  padding: 20px 10px;
+}
+.details2{
+  padding: 50px 10px 10px 10px;
+}
+.details1>h3{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+.details1>p{
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.btn{
+  margin-top: 10px;
+}
+
+.vibhav-zoom{
+  transition: all 0.2s ease-in;
+}
+
+.vibhav-zoom:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px 8px #222222;;
+}
+
+body > section > div > p{
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .size{
+    width: 60%;
+  }
+}
+
+.body1 > div.carda_w.card2.vibhav-zoom.wow.bounceInUp.workshop > div.details2.details1 > p{
+  text-align: justify;
+}
+
+
+.img-res{
+  height: 100%;
+}
+
+@media (min-width: 1400px) {
+  .event-container{
+    margin-left: -120px;
+    width: 120%;
+  }
+}
+
+.des-text-apne{
+color:  white;
+}
+
+.date-Text{
+ color: white;
+}
+
+/* .ak-nb{
+  
+} */
