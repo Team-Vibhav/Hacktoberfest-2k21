@@ -5,6 +5,7 @@
 - A few bugs have been added to the official website of Team Vibhav, and they have been listed as issues, You guys can solve those issues and contribute to the repo
 - Each issue will have one of the four labels `easy`  `medium`  `advance` `danger`
 - You can comment on the issue you want to contribute to and it will be assigned to you
+- There are also issues with labels `beginner` which is beginner friendly, `css` which will require you to learn css and then solve it, `js` which will test your js skills
 
 ## Setup
 - Fork this repo
