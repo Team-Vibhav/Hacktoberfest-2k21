@@ -938,7 +938,7 @@ hr {
 }
 
 #about .about-content h2:hover {
-    color: #1bb1dc;
+    color:#1c2333;
 }
 
 #about .about-content h3 {
@@ -2014,7 +2014,7 @@ hr {
 }
 
 #about>div>div>div.col-lg-7.col-md-6>div>p {
-    text-align: justify;
+    text-align: center;
 }
 
 .vaishnavi {
