@@ -3,7 +3,7 @@
 
 ## How to contribute?
 - A few bugs have been added to the official website of Team Vibhav, and they have been listed as issues, You guys can solve those issues and contribute to the repo
-- Each issue will have one of the three labels `easy` or `medium` or `advance`
+- Each issue will have one of the four labels `easy`  `medium`  `advance` `danger`
 - You can comment on the issue you want to contribute to and it will be assigned to you
 
 ## Setup
