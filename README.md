@@ -11,7 +11,7 @@
 - Fork this repo
 - Clone the repo from your github
 - Make a new branch `git branch <bug_you_want_to_solve>`
-- Switch to your branch `git checkout <your_branch>`
+- Switch to your branch `git checkout <bug_you_want_to_solve>`
 - Start working on your issue
 
 ## References
