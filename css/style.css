@@ -5,7 +5,12 @@
     font-size: 20px;
     font-weight: 1000;
 }
-
+.aks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 340px;
+}
 
 /* add light mode css here */
 
@@ -801,7 +806,6 @@ hr {
 .mobile-nav a {
     display: block;
     position: relative;
-    color: rgb(255, 254, 254);
     padding: 10px 20px;
     font-weight: 500;
 }
