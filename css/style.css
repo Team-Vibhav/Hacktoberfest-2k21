@@ -1445,9 +1445,6 @@ hr {
 #team .member:hover .member-info-content {
     height: 80px;
 }
-.bug .member:hover .member-info-content {
-    height: 40px !important;
-}
 
 #team .member h4 {
     font-weight: 700;
