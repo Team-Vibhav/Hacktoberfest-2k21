@@ -533,7 +533,13 @@
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
-
+    <script type="text/javascript">
+        $(window).load(function() {
+            setTimeout(function() {
+                $('#loading').fadeOut('slow');
+            }, 800)
+        })
+    </script>
 </body>
 
 </html>
