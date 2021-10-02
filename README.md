@@ -17,3 +17,6 @@
 ## References
 - Official website of Team Vibhav https://vibhav-nith.netlify.app
 - Hacktoberfest website https://vibhav-hacktoberfest-2k21.netlify.app
+
+## How should a PR look like 
+- [fix faq toggle behavior #50](https://github.com/Team-Vibhav/Hacktoberfest-2k21/pull/50)✔️
