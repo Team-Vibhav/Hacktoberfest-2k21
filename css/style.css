@@ -2069,3 +2069,9 @@ body>div.cards1.body1>div.carda_w.card1.card1w.vibhav-zoom.wow.bounceInUp.worksh
 body>div.cards1.body1>div.carda_w.card2.vibhav-zoom.wow.bounceInUp.workshop>div.details2.details1>p {
     text-align: justify;
 }
+.aks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 340px;
+}
