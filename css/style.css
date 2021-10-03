@@ -841,9 +841,6 @@ hr {
 .mobile-nav .drop-down li {
     padding-left: 20px;
 }
-.bug .mobile-nav-toggle{
-    display: none;
-}
 .mobile-nav-toggle {
     position: fixed;
     right: 0;
