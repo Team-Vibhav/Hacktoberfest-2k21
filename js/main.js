@@ -23,9 +23,8 @@
   $('.back-to-top').click(function () {
     $('html, body').animate(
       {
-        
-      },
-      1500,
+        scrollTop: 0        
+      },    
       'easeInOutExpo'
     );
     return false;
