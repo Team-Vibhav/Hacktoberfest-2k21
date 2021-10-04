@@ -975,14 +975,16 @@ hr {
 
 #about .about-img img {
     width: 100%;
-    transition: 0.1s;
+    transition: 0.5s;
+     transition-property: all;
+     transition-duration: 0.5s;
+     transition-timing-function: ease;
+     transition-delay: 0s;
 }
 
 #about .about-img img:hover {
-    width: 100%;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
+    transform: scale(1.03);
+   }
 
 #about .about-img::before {
     position: absolute;
@@ -993,6 +995,7 @@ hr {
     z-index: -1;
     content: '';
     transition: .5s;
+    box-sizing: border-box;
 }
 
 #about .about-img::after {
@@ -1004,6 +1007,7 @@ hr {
     z-index: -1;
     content: '';
     transition: .5s;
+    box-sizing: border-box;
 }
 
 
