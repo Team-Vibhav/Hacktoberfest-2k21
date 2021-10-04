@@ -732,12 +732,12 @@ hr {
 .main-nav .drop-down:hover>ul {
     opacity: 1;
     top: 100%;
-    visibility: visible;
+    visibility: visible;    
 }
 
 .main-nav .drop-down li {
     min-width: 180px;
-    position: relative;
+    position: relative;    
 }
 
 .main-nav .drop-down ul a {
@@ -756,9 +756,9 @@ hr {
 
 .main-nav .drop-down>a:after {
     content: "\f107";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     padding-left: 10px;
-}
+} 
 
 .main-nav .drop-down .drop-down ul {
     top: 0;
@@ -819,7 +819,7 @@ hr {
 
 .mobile-nav .drop-down>a:after {
     content: "\f078";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     padding-left: 10px;
     position: absolute;
     right: 15px;
