@@ -624,11 +624,6 @@ a {
     -moz-animation: neon2 1.5s ease-in-out infinite alternate;
     animation: neon2 1.5s ease-in-out infinite alternate;
 }
-.site-title .bug {
-    -webkit-animation: neon2 1.5s ease-in-out infinite alternate !important;
-    -moz-animation: neon2 1.5s ease-in-out infinite alternate !important;
-    animation: neon2 1.5s ease-in-out infinite alternate !important;
-}
 
 
 /*glow*/
@@ -714,9 +709,7 @@ to {
     background-color: #0A98C0;
     border: none;
 }
-.site-title .bug:hover {
-    font-size: 0 !important;
-}
+
 .btncolor:hover {
     background-color: white;
     border: 2px solid #0A98C0;
@@ -799,7 +792,6 @@ to {
 
 
 /*project description*/
-
 
 .text-pahal {
     font-size: medium;
