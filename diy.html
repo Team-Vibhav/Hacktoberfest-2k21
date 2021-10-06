@@ -37,6 +37,8 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/button.css">
+
+    <script src="https://kit.fontawesome.com/6829426eec.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="myfunction()">
@@ -72,7 +74,7 @@
 
             <nav class="main-nav float-right d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="index.html#intro">Home</a></li>
+                    <li><a href="index.html#intro">Home</a></li>
                     <li><a href="/index.html#about">About Us</a></li>
 
 
@@ -88,7 +90,7 @@
 
                         </ul>
                     </li>
-                    <li class="drop-down"><a href="">Our Work</a>
+                    <li class="active drop-down"><a href="">Our Work</a>
                         <ul>
 
 
@@ -96,7 +98,7 @@
                             <li><a href="event.html">Events </a></li>
                             <li><a href="workshop.html">Workshops </a></li>
                             <li><a href="pahal.html">Pahal </a></li>
-                            <li><a href="diy.html">DIY Projects </a></li>
+                            <li class="active"><a href="diy.html">DIY Projects </a></li>
                             <li><a href="nithvr.html">NITH Vr </a></li>
                         </ul>
                     </li>
@@ -511,6 +513,14 @@
             </div>
         </div>
     </div>
+    <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
+    <footer id="footer" class="">
+        <div class="container">
+            <div class="credits text-light">
+                Designed by <a href="#">Vibhav</a>
+            </div>
+        </div>
+    </footer>
     <!-- #footer -->
 
 
@@ -533,7 +543,13 @@
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
-
+    <script type="text/javascript">
+        $(window).load(function() {
+            setTimeout(function() {
+                $('#loading').fadeOut('slow');
+            }, 800)
+        })
+    </script>
 </body>
 
 </html>

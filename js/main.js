@@ -23,9 +23,8 @@
   $('.back-to-top').click(function () {
     $('html, body').animate(
       {
-        
-      },
-      1500,
+        scrollTop: 0        
+      },    
       'easeInOutExpo'
     );
     return false;
@@ -121,7 +120,16 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function () {
-    // jQuery isotope filter
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item',                         
+    });
+    $('#portfolio-flters li').on('click', function (e) {        
+      $('#portfolio-flters li').removeClass('filter-active');     //extra method to remove active class from all list items
+      $(this).addClass('filter-active');                          //extra method to set vlass of selected/clicked list item as active
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter'),                        
+      });
+    });
   });
 
   // Testimonials carousel (uses the Owl Carousel library)

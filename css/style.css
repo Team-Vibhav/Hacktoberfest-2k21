@@ -5,7 +5,12 @@
     font-size: 20px;
     font-weight: 1000;
 }
-
+.aks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 340px;
+}
 
 /* add light mode css here */
 
@@ -727,12 +732,12 @@ hr {
 .main-nav .drop-down:hover>ul {
     opacity: 1;
     top: 100%;
-    visibility: visible;
+    visibility: visible;    
 }
 
 .main-nav .drop-down li {
     min-width: 180px;
-    position: relative;
+    position: relative;    
 }
 
 .main-nav .drop-down ul a {
@@ -751,9 +756,9 @@ hr {
 
 .main-nav .drop-down>a:after {
     content: "\f107";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     padding-left: 10px;
-}
+} 
 
 .main-nav .drop-down .drop-down ul {
     top: 0;
@@ -801,7 +806,6 @@ hr {
 .mobile-nav a {
     display: block;
     position: relative;
-    color: rgb(255, 254, 254);
     padding: 10px 20px;
     font-weight: 500;
 }
@@ -815,7 +819,7 @@ hr {
 
 .mobile-nav .drop-down>a:after {
     content: "\f078";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     padding-left: 10px;
     position: absolute;
     right: 15px;
@@ -836,9 +840,6 @@ hr {
 
 .mobile-nav .drop-down li {
     padding-left: 20px;
-}
-.bug .mobile-nav-toggle{
-    display: none;
 }
 .mobile-nav-toggle {
     position: fixed;
@@ -1444,9 +1445,6 @@ hr {
 
 #team .member:hover .member-info-content {
     height: 80px;
-}
-.bug .member:hover .member-info-content {
-    height: 40px !important;
 }
 
 #team .member h4 {
@@ -2072,4 +2070,10 @@ body>div.cards1.body1>div.carda_w.card1.card1w.vibhav-zoom.wow.bounceInUp.worksh
 
 body>div.cards1.body1>div.carda_w.card2.vibhav-zoom.wow.bounceInUp.workshop>div.details2.details1>p {
     text-align: justify;
+}
+.aks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 340px;
 }
