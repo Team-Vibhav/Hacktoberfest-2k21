@@ -214,6 +214,7 @@ body>section>div>div.container.h-100>div>div>div>div>h3:hover {
 }
 
 .blog-page .single_post .img-post>img {
+    -webkit-filter: grayscale(1);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -222,7 +223,7 @@ body>section>div>div.container.h-100>div>div>div>div>h3:hover {
     max-width: 60%;
 }
 
-.blog-page .single_post .img-post img {
+.blog-page .single_post .img-post:hover img {
     filter: none;
     opacity: .7;
     -webkit-filter: grayscale(0);
