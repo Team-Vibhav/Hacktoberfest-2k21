@@ -214,6 +214,7 @@ body>section>div>div.container.h-100>div>div>div>div>h3:hover {
 }
 
 .blog-page .single_post .img-post>img {
+    -webkit-filter: grayscale(1);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -222,7 +223,7 @@ body>section>div>div.container.h-100>div>div>div>div>h3:hover {
     max-width: 60%;
 }
 
-.blog-page .single_post .img-post img {
+.blog-page .single_post .img-post:hover img {
     filter: none;
     opacity: .7;
     -webkit-filter: grayscale(0);
@@ -693,9 +694,9 @@ hr {
     float: left;
 }
 
-.bug a{
+/* .bug a{
     color:#c9a68b !important;
-}
+} */
 .main-nav a {
     display: block;
     position: relative;
@@ -732,12 +733,12 @@ hr {
 .main-nav .drop-down:hover>ul {
     opacity: 1;
     top: 100%;
-    visibility: visible;
+    visibility: visible;    
 }
 
 .main-nav .drop-down li {
     min-width: 180px;
-    position: relative;
+    position: relative;    
 }
 
 .main-nav .drop-down ul a {
@@ -756,9 +757,9 @@ hr {
 
 .main-nav .drop-down>a:after {
     content: "\f107";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     padding-left: 10px;
-}
+} 
 
 .main-nav .drop-down .drop-down ul {
     top: 0;
@@ -819,7 +820,7 @@ hr {
 
 .mobile-nav .drop-down>a:after {
     content: "\f078";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     padding-left: 10px;
     position: absolute;
     right: 15px;
@@ -976,14 +977,16 @@ hr {
 
 #about .about-img img {
     width: 100%;
-    transition: 0.1s;
+    transition: 0.5s;
+     transition-property: all;
+     transition-duration: 0.5s;
+     transition-timing-function: ease;
+     transition-delay: 0s;
 }
 
 #about .about-img img:hover {
-    width: 100%;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
+    transform: scale(1.03);
+   }
 
 #about .about-img::before {
     position: absolute;
@@ -994,6 +997,7 @@ hr {
     z-index: -1;
     content: '';
     transition: .5s;
+    box-sizing: border-box;
 }
 
 #about .about-img::after {
@@ -1005,6 +1009,7 @@ hr {
     z-index: -1;
     content: '';
     transition: .5s;
+    box-sizing: border-box;
 }
 
 
