@@ -71,17 +71,20 @@
 	<script>
 		function SubForm() {
 			var score = document.getElementById("scoreNumber").innerText;
-			var d = new Date();
-			var date = d.toString();
+			document.getElementById('ak_score').value = score;
+			var t = new Date();
+			var time = t.toLocaleTimeString(); 
+			var date = t.toLocaleDateString();
 			document.getElementById('ak_date').value = date;
+			document.getElementById('ak_time').value = time;
 			$.ajax({
-				url: "https://api.apispreadsheets.com/data/10155/",
-				type: "post",
-				data: $("#akForm").serializeArray(),
-				success: function () {
+				url:"https://api.apispreadsheets.com/data/19684/",
+				type:"POST",
+				data:$("#akForm").serializeArray(),
+				success: function(){
 					location.reload()
 				},
-				error: function (e) {
+				error: function(e){
 					alert("error");
 				}
 			});
@@ -271,10 +274,11 @@
 				setTimeout(function () {
 					var ak_end = document.getElementById("endGameButton");
 					ak_end.click();
-				}, 152000);
+				}, 120000);
 			}
 		}
 	//https://stackoverflow.com/questions/3969475/javascript-pause-settimeout
+	//https://docs.google.com/spreadsheets/d/1JFdDXdzg9cmJ1WdN0NtUuODjxFnSzZW2XYN3SnCrfKo/
 	</script>
 	<script type="text/javascript">
 		function akhome() {

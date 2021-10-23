@@ -435,6 +435,7 @@
         gmovrTick.run = function () {
             Main.stage.showStartMenu();
             gmovrTick.stop();
+			ak_end.click();
             window.location.reload();
         };
     };
